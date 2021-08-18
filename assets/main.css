@@ -1,0 +1,400 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+nav{
+  background: #6679e0;
+  min-height: 11vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  position: sticky;
+  flex-wrap: wrap;
+  top: 0;
+  border-bottom: 3.5px solid black;
+  z-index: 1;
+}
+
+nav h1{
+font-family: 'Dancing Script', cursive;
+font-size: 2rem;
+color: black;
+}
+
+nav ul{
+  min-width: 60vw;
+  display: flex;
+  justify-content:space-around;
+  list-style: none;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid  #6679e0;
+  border-radius: 10px;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+
+nav a:hover{
+  border-color: white;
+}
+
+header{
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text{
+  flex: 1 1 30rem;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h1{
+  width: 30vw;
+  font-size: 2.2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hero-text p{
+  width: 30vw;
+  margin: 1rem;
+  font-size: 1.6rem;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+
+.hero-image{
+  position: relative;
+  display: flex;
+  position: relative;
+  flex: 1 1 30rem;
+  height: 60vh;
+
+}
+.hero-image svg{
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+}
+#bubble,
+#bubble_2,
+#bubble_3,
+#bubble_4,
+#bubble_5,
+#bubble_6,
+#bubble_7,
+#bubble_8,
+#bubble_9,
+#bubble_10,
+#bubble_11,
+#bubble_12{
+  animation: fly 7s linear infinite;
+  }
+#head{
+  animation: head 2s linear infinite alternate;
+  transform-origin: center;
+  transform-box:fill-box;
+}
+#test-tube,#Flask{
+  animation: liquid 2s linear infinite alternate;
+  transform-origin: center;
+  transform-box:fill-box;
+}
+
+.gallery{
+  margin: auto;
+  margin-top: 10rem;
+  width: 70vw;
+  min-height:80vh;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:"box1 box1 box2"
+                      "box1 box1 box3"
+                      "box4 box5 box6";
+
+}
+
+.box{
+  height: 100%;
+width:100%;
+  padding: 2rem;
+  font-size: 3rem;
+  display: flex;
+  color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.gallery a{
+  min-height: 30vh;
+ text-decoration: none;
+ background-color: white;
+}
+
+.gallery a:nth-child(1){
+  grid-area: box1;
+  font-size: 5rem;
+}
+
+.box:hover{
+animation: text 0.6s ease-out forwards;
+}
+.gallery a:nth-child(2){
+grid-area: box2;
+
+
+}
+.gallery a:nth-child(3){
+grid-area: box3;
+
+}
+.gallery a:nth-child(4){
+grid-area: box4;
+
+}
+.gallery a:nth-child(5){
+grid-area: box5;
+
+}
+.gallery a:nth-child(6){
+grid-area: box6;
+
+}
+
+.Info-section{
+  margin: auto;
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+  width: 80vw;
+  min-height:60vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Info-text{
+  flex: 2 1 30rem;
+  min-height:60vh;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items:center;
+padding: 10rem;
+}
+
+.Info-text h1{
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.Info-text p{
+  font-size: 1.2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.Info-img{
+  flex: 1 1 20rem;
+  min-height:60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid #6679e0;
+  border-radius: 10px;
+}
+.newton{
+    background-image: url("newton.jpg");
+}
+
+.Einstein{
+  background-image: url("Einstein.jpg");
+}
+.Einstein2{
+  background-image: url("Einstein2.jpg");
+}
+.Tesla{
+  background-image: url("tesla.jpg");
+}
+.Darwin{
+  background-image: url("charles-darwin.jpg");
+}
+.marie{
+  background-image: url("marie-curie.jpg");
+}
+.Edison{
+  background-image: url("thomas-edison.jpg");
+}
+
+.Add-info{
+  margin: auto;
+  margin-bottom: 10rem;
+  width: 80vw;
+  height: 70vh;
+  background: blue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+}
+@media screen and (max-width:1024px){
+  html{
+    font-size: 80%;
+  }
+  .hero-text{
+    height: 40vh;
+  }
+
+  .hero-image{
+    height: 40vh;
+  }
+  .hero-text h1{
+    width: 70vw;
+  }
+
+  .hero-text p{
+    width: 70vw;
+  }
+  .hero-text a{
+    width: 70vw;
+  }
+  .gallery{
+    grid-template-areas:"box1 box1"
+                        "box1 box1"
+                        "box4 box2"
+                        "box5 box6"
+                        "box3 box3";
+
+  }
+  .box{
+    min-height: 40vh;
+  }
+
+}
+
+
+@media screen and (max-width:786px) {
+html{
+  font-size: 60%;
+}
+body{
+
+}
+
+nav{
+  width: 100vw;
+  width: 100vw;
+  min-height: 15vh;
+  flex-direction: column;
+}
+
+nav ul{
+  width: 90vw;
+}
+
+nav a{
+    font-size: 1rem;
+}
+
+.hero-text{
+  flex: 1 1 50rem;
+  height: 40vh;
+}
+.hero-text h1{
+  width: 80vw;
+}
+
+.hero-text p{
+  width: 80vw;
+}
+.hero-text a{
+  width: 80vw;
+}
+.hero-image{
+  flex: 1 1 50rem;
+  height: 40vh;
+}
+
+.gallery{
+  width: 80vw;
+}
+.box{
+  min-height: 50vh;
+}
+}
+
+@keyframes text {
+from{
+  background-color:  rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+to{
+  background: white;
+  color: #6679e0;
+}
+}
+
+@keyframes fly {
+  0%{
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(-30%);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-100%);
+
+  }
+}
+
+@keyframes head {
+from{
+  transform:rotate(0deg);
+}
+to{
+  transform: rotate(12deg);
+
+}
+}
+
+@keyframes liquid {
+  from{
+    transform:rotate(-3deg);
+  }
+  to{
+    transform: rotate(3deg);
+
+  }
+}
